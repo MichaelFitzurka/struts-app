@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="struts-app" default="installAll" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+	<property environment="env"/>
+	<path id="maven-ant-tasks.classpath" path="$ANT_HOME/lib/maven-ant-tasks-2.1.3.jar" />
+	<property name="jboss" value="/home/mevangel/rht/jboss/jboss-eap-7.0"/>
+	<property name="jboss.deployment" value="${jboss}/standalone/deployments"/>
+	<property name="base" value="."/>
+	<target name="installAll" > 
+		<artifact:mvn> 
+			<arg value="install"/> 
+		</artifact:mvn>
+		<copy file="${base}/target/struts-app.war" todir="${jboss.deployment}"/>
+	</target> 	
+</project>
