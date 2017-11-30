@@ -11,7 +11,8 @@
 </head>
 <body>
 <center>
-<h1>EQUIFAX</h1>
+<h1>EQUIFAX 123456789
+</h1>
 <s:form action="login">
 <s:textfield key="user.name"></s:textfield>
 <s:textfield key="user.city"></s:textfield>
