@@ -1,0 +1,1 @@
+AUI().ready(function(){});Liferay.Portlet.ready(function(b,c){});Liferay.on("allPortletsReady",function(){});function updateCokie(b,c,a){a&&(a=new Date,a.setMonth(a.getMonth()+3),document.cookie=c+"\x3d"+b+";path\x3d/;expires\x3d"+a.toGMTString())}function callEloqua(b,c,a){updateCokie(b,c,a);$.ajax({type:"GET",url:b,success:function(d){},error:function(){}})};
