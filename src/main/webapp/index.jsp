@@ -11,7 +11,7 @@
 </head>
 <body>
 <center>
-<h1>EQUIFAX 123456789
+<h1>EQUIFAX Build Test after creating a Webhook.
 </h1>
 <s:form action="login">
 <s:textfield key="user.name"></s:textfield>
